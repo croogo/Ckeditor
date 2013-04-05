@@ -63,7 +63,7 @@ Croogo.Wysiwyg.Ckeditor = {
 			}
 			preset = Croogo.Wysiwyg.Ckeditor.presets[config.preset];
 		}
-		$.extend(config, defaults, preset);
+		$.extend(defaults, config, preset);
 		CKEDITOR.replace(el, config);
 	}
 
