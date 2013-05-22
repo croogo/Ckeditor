@@ -14,6 +14,7 @@ Croogo.Wysiwyg.Ckeditor = {
 		},
 
 		standard: {
+			allowedContent: true,
 			toolbar: [
 				{ name: 'clipboard', groups: [ 'clipboard', 'undo' ], items: [ 'Cut', 'Copy', 'Paste', 'PasteText', 'PasteFromWord', '-', 'Undo', 'Redo' ] },
 				{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ], items: [ 'Scayt' ] },
@@ -31,6 +32,7 @@ Croogo.Wysiwyg.Ckeditor = {
 		},
 
 		full: {
+			allowedContent: true,
 			toolbarGroups: [
 				{ name: 'clipboard', groups: [ 'clipboard', 'undo' ] },
 				{ name: 'editing', groups: [ 'find', 'selection', 'spellchecker' ] },
