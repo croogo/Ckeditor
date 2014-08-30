@@ -43,13 +43,12 @@ class CkeditorHelper extends AppHelper {
  * @return void
  */
 	public function beforeRender($viewFile) {
-		$this->Html->script('/ckeditor/js/wysiwyg', array('inline' => false));
-
 		if (is_array(Configure::read('Wysiwyg.actions'))) {
 			$this->actions = Hash::merge($this->actions, Configure::read('Wysiwyg.actions'));
 		}
 		$action = Inflector::camelize($this->params['controller']) . '/' . $this->params['action'];
 		if (Configure::read('Writing.wysiwyg') && isset($this->actions[$action])) {
+                        $this->Html->script('/ckeditor/js/wysiwyg', array('inline' => false));
 			$this->Html->script('/ckeditor/js/ckeditor', array(
 				'inline' => false,
 			));
