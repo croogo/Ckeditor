@@ -2,8 +2,12 @@
 
 Plugin for integrating [CKEDitor](http://ckeditor.com/) into [Croogo](http://croogo.org).
 
-Requires Croogo v1.5 or higher
+Requires Croogo v3.x
 
 ## Installation
 
-Clone/Upload the content of this repository to /app/Plugin/Ckeditor, and activate the plugin from your admin panel.
+You can install this library through [Composer](https://getcomposer.org/).
+
+````bash
+$ composer require croogo/ckeditor:3.0.x-dev
+````
